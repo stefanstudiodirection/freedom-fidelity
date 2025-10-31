@@ -94,11 +94,11 @@ function formatDate(date: Date) {
 function getTransactionIcon(type: string) {
   switch (type) {
     case "withdrawal":
-      return <ArrowDown className="w-5 h-5 text-[#716860]" />;
+      return <ArrowDown className="w-5 h-5 text-[#211E1E] dark:text-white" />;
     case "topup":
-      return <ArrowUp className="w-5 h-5 text-[#716860]" />;
+      return <ArrowUp className="w-5 h-5 text-[#211E1E] dark:text-white" />;
     case "transfer":
-      return <ArrowRightLeft className="w-5 h-5 text-[#716860]" />;
+      return <ArrowRightLeft className="w-5 h-5 text-[#211E1E] dark:text-white" />;
     default:
       return null;
   }
@@ -218,15 +218,15 @@ const AccountDetail: React.FC = () => {
             ) : (
               <div>
                 {filteredTransactions.map(tr => (
-                  <div key={tr.id} className="flex items-center gap-4 py-4 border-b border-[#2C2C2E] hover:bg-[#1C1C1E]/30 transition-colors cursor-pointer">
-                    <div className="w-12 h-12 rounded-lg bg-[#2C2C2E] flex items-center justify-center flex-shrink-0">
+                  <div key={tr.id} className="flex items-center gap-4 py-4 border-b border-[#E5E5EA] dark:border-[#2C2C2E] hover:bg-[#E5E5EA] dark:hover:bg-[#1C1C1E]/30 transition-colors cursor-pointer">
+                    <div className="w-12 h-12 rounded-lg bg-white dark:bg-[#2C2C2E] flex items-center justify-center flex-shrink-0">
                       {getTransactionIcon(tr.type)}
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className="font-medium text-white">{getTransactionLabel(tr.type)}</div>
+                      <div className="font-medium text-foreground">{getTransactionLabel(tr.type)}</div>
                       <div className="text-sm text-white/60">{formatDate(tr.date)}</div>
                     </div>
-                    <div className={`text-right font-semibold ${tr.amount > 0 ? 'text-[#34C759]' : 'text-white'}`}>
+                    <div className={`text-right font-semibold ${tr.amount > 0 ? 'text-[#34C759]' : 'text-foreground'}`}>
                       {tr.amount > 0 ? '+' : '-'}£{Math.abs(tr.amount).toFixed(2)}
                     </div>
                   </div>
