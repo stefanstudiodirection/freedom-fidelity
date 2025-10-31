@@ -291,18 +291,17 @@ const Budgeting: React.FC = () => {
                           x={viewBox.cx}
                           y={viewBox.cy}
                           textAnchor="middle"
-                          dominantBaseline="middle"
                         >
                           <tspan
                             x={viewBox.cx}
-                            y={viewBox.cy}
+                            y={(viewBox.cy || 0) - 10}
                             className="fill-muted-foreground text-xs"
                           >
                             Total
                           </tspan>
                           <tspan
                             x={viewBox.cx}
-                            y={(viewBox.cy || 0) + 20}
+                            y={(viewBox.cy || 0) + 10}
                             className="fill-foreground text-lg font-semibold"
                           >
                             {formatCurrency(totalSpent)}
