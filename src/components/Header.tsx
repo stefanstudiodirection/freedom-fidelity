@@ -10,13 +10,8 @@ export const Header: React.FC = () => {
 
   return (
     <header className="w-full pb-6 pt-6 px-4">
-      <div className="flex w-full items-center gap-[40px_97px] justify-between">
+      <div className="flex w-full items-center justify-between">
         <div className="self-stretch flex items-center gap-4 font-normal leading-[1.2] my-auto">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/e70969b1b81e6e0c41cb6b6011e3eb3059a765a3?placeholderIfAbsent=true"
-            className="aspect-[1] object-contain w-12 self-stretch min-h-12 shrink-0 gap-2.5 my-auto rounded-md"
-            alt="User profile"
-          />
           <div className="self-stretch my-auto">
             <h1 className="text-foreground text-2xl">Welcome, Peter</h1>
             <p className="text-[#716860] text-base">30 October 2025</p>
@@ -25,7 +20,7 @@ export const Header: React.FC = () => {
         <div className="self-stretch flex items-center gap-3 my-auto">
           <ThemeToggle />
           <button
-            className="bg-[rgba(33,30,30,1)] self-stretch flex min-h-12 w-12 items-center gap-2 justify-center h-12 my-auto px-3 rounded-[46px] hover:bg-[rgba(33,30,30,0.8)] transition-colors"
+            className="bg-[#fff] dark:bg-[rgba(33,30,30,1)] self-stretch flex min-h-12 w-12 items-center gap-2 justify-center h-12 my-auto px-3 rounded-[46px] hover:bg-[rgba(33,30,30,0.8)] transition-colors"
             onClick={handleNotificationClick}
             aria-label={`Notifications ${notificationCount > 0 ? `(${notificationCount})` : ""}`}
           >
