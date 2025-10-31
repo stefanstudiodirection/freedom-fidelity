@@ -327,7 +327,7 @@ const Budgeting: React.FC = () => {
 								data={chartData}
 								dataKey="amount"
 								nameKey="category"
-								innerRadius={80}
+								innerRadius={70}
 								strokeWidth={3}
 							>
 								<Label
