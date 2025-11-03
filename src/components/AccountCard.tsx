@@ -35,6 +35,26 @@ export const AccountCard: React.FC<AccountCardProps> = ({
     return type === 'pension' ? 'text-white' : 'text-[#211E1E]';
   };
 
+  const getPaddingClass = () => {
+    if (type === 'pension' || type === 'savings') {
+      return 'p-4 pb-[40px]';
+    }
+    return 'p-4';
+  };
+
+  const getZIndex = () => {
+    switch (type) {
+      case 'pension':
+        return 'z-10';
+      case 'savings':
+        return 'z-20';
+      case 'current':
+        return 'z-30';
+      default:
+        return 'z-0';
+    }
+  };
+
   return (
     <article 
       onClick={onClick}
@@ -46,7 +66,7 @@ export const AccountCard: React.FC<AccountCardProps> = ({
       }}
       role="button"
       tabIndex={0}
-      className={`w-full ${getBackgroundColor()} p-4 rounded-[9px] cursor-pointer transition-opacity`}
+      className={`w-full ${getBackgroundColor()} ${getPaddingClass()} ${getZIndex()} rounded-[9px] cursor-pointer transition-opacity relative`}
     >
       {/* Top section: Logo | Balance */}
       <div className="flex justify-between items-start mb-3">

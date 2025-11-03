@@ -101,15 +101,17 @@ export const HomeDark: React.FC = () => {
           </div>
 
           <section aria-label="Account overview" className="w-full">
-            <AccountCard
-              type="pension"
-              accountName="Pension"
-              subtitle=""
-              balance={formatBalance(accounts.pension.balance)}
-              onClick={() => navigate('/account/pension')}
-            />
+            <div className="mb-[-24px]">
+              <AccountCard
+                type="pension"
+                accountName="Pension"
+                subtitle=""
+                balance={formatBalance(accounts.pension.balance)}
+                onClick={() => navigate('/account/pension')}
+              />
+            </div>
 
-            <div className="mt-[9px]">
+            <div className="mb-[-24px]">
               <AccountCard
                 type="savings"
                 accountName="Savings"
@@ -119,7 +121,7 @@ export const HomeDark: React.FC = () => {
               />
             </div>
 
-            <div className="mt-[9px]">
+            <div className="mt-0">
               <AccountCard
                 type="current"
                 accountName="Current Account"
