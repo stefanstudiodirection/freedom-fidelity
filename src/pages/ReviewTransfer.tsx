@@ -33,15 +33,27 @@ export const ReviewTransfer: React.FC = () => {
   };
 
   const handleMoveFunds = () => {
-    // Navigate to PIN confirmation instead of executing transfer directly
-    navigate('/pin-confirmation', { 
-      state: { 
-        amount,
-        sourceAccount,
-        destinationAccount,
-        currency
-      } 
-    });
+    // If source account is 'savings', show warning first
+    if (sourceAccount === 'savings') {
+      navigate('/savings-warning', { 
+        state: { 
+          amount,
+          sourceAccount,
+          destinationAccount,
+          currency
+        } 
+      });
+    } else {
+      // For other accounts, go directly to PIN confirmation
+      navigate('/pin-confirmation', { 
+        state: { 
+          amount,
+          sourceAccount,
+          destinationAccount,
+          currency
+        } 
+      });
+    }
   };
 
   return (
