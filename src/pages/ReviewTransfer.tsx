@@ -97,7 +97,7 @@ export const ReviewTransfer: React.FC = () => {
 				</div>
 
 				{/* Transfer Summary Cards */}
-				<div className="space-y-4">
+				<div className="space-y-4 mb-6">
 					{/* Move From Card */}
 					<div className="bg-white dark:bg-[#211E1E] border border-border rounded-lg p-4">
 						<div className="flex items-center justify-between">
@@ -196,7 +196,7 @@ export const ReviewTransfer: React.FC = () => {
 				)}
 
 				{/* Move Funds Button */}
-				<div className="mt-6">
+				<div className="">
 					<Button
 						onClick={handleMoveFunds}
 						className="w-full h-14 bg-[#A488F5] hover:bg-[#9575e8] text-white font-medium text-base rounded-xl"
