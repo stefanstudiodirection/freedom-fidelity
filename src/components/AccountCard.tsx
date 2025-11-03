@@ -36,7 +36,7 @@ export const AccountCard: React.FC<AccountCardProps> = ({
   };
 
   const getPaddingClass = () => {
-    if (type === 'pension' || type === 'savings') {
+    if (type === 'current' || type === 'savings') {
       return 'p-4 pb-[40px]';
     }
     return 'p-4';
