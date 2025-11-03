@@ -397,7 +397,7 @@ const Budgeting: React.FC = () => {
 										<span className="text-sm text-muted-foreground">
 											Account
 										</span>
-										<span className="font-semibold text-foreground text-lg">
+										<span className="text-foreground text-sm">
 											{account.name}
 										</span>
 									</div>
@@ -406,7 +406,7 @@ const Budgeting: React.FC = () => {
 								{/* Right side - Balance info */}
 								<div className="flex flex-col items-end">
 									<span className="text-sm text-muted-foreground">Balance</span>
-									<span className="font-semibold text-foreground text-lg">
+									<span className="text-sm text-foreground">
 										{formatCurrency(account.balance)}
 									</span>
 								</div>
