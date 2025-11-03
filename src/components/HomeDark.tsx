@@ -86,20 +86,6 @@ export const HomeDark: React.FC = () => {
         <Header />
 
         <main className="w-full mt-4 px-4">
-          <div className="mb-6">
-            {/* <CreditCard
-              cardholderName="Peter Smith"
-              cardNumber="4562"
-              validUntil="04/28"
-              cvv="***"
-              bankName="Mercer"
-              cardType="freedom"
-            /> */}
-            <div className="mt-4">
-              <AccountActions actions={currentAccountActions} />
-            </div>
-          </div>
-
           <section aria-label="Account overview" className="w-full">
             <div className="mb-[-24px]">
               <AccountCard
@@ -132,6 +118,20 @@ export const HomeDark: React.FC = () => {
             </div>
 
           </section>
+
+          <div className="mb-6">
+            {/* <CreditCard
+              cardholderName="Peter Smith"
+              cardNumber="4562"
+              validUntil="04/28"
+              cvv="***"
+              bankName="Mercer"
+              cardType="freedom"
+            /> */}
+            <div className="mt-4">
+              <AccountActions actions={currentAccountActions} />
+            </div>
+          </div>
         </main>
 
         <section className="w-full pb-6 px-4 mt-6" aria-label="Promotions">
