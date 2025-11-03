@@ -9,7 +9,7 @@ export const Header: React.FC = () => {
 	};
 
 	return (
-		<header className="w-full pb-6 pt-6 px-4">
+		<header className="w-full pb-1 pt-6 px-4">
 			<div className="flex w-full items-center justify-between">
 				<div className="self-stretch flex items-center gap-4 font-normal leading-[1.2] my-auto">
 					<div className="self-stretch my-auto text-foreground">
