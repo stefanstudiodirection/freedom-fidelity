@@ -613,7 +613,7 @@ const Budgeting: React.FC = () => {
 							No transactions yet
 						</div>
 					) : (
-						<div className="space-y-3">
+						<div className="">
 							{filteredTransactions.map((transaction) => (
 								<div
 									key={transaction.id}
