@@ -65,7 +65,7 @@ export const SavingsWarning: React.FC = () => {
 				</div>
 
 				{/* Main Heading */}
-				<h2 className="text-2xl font-normal text-center mb-8 leading-tight">
+				<h2 className="text-2xl font-normal text-center mb-6 leading-tight">
 					Moving from Savings to
 					<br />
 					Current account
@@ -73,9 +73,12 @@ export const SavingsWarning: React.FC = () => {
 
 				{/* Important Information Section */}
 				<div className="">
-					<h3 className="text-base font-normal mb-4">
-						Important things to know:
+					<h3 className="text-base font-normal text-center text-[#716860]">
+						You're moving £2,500 from your high-
+            interest savings to your spending account.
 					</h3>
+
+          <div className="w-full h-px mt-8 mb-8" style={{ background: 'rgba(33, 30, 30, 0.15)' }}/>
 
 					<div className="space-y-4 mb-6">
 						{/* Item 1 */}
