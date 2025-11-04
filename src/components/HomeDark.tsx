@@ -152,7 +152,7 @@ export const HomeDark: React.FC = () => {
             </button>
           </div>
 
-          <div className="flex w-full items-center gap-4 font-normal mt-4 overflow-x-auto">
+          <div className="flex gap-4 overflow-x-auto pb-2 -mx-4 px-4 scrollbar-hide mt-4">
             <PromotionCard
               title="Maximise your retirement potential"
               backgroundImage="https://api.builder.io/api/v1/image/assets/TEMP/77d83e8891b893820180d5c1091f1c417adaa71d?placeholderIfAbsent=true"
