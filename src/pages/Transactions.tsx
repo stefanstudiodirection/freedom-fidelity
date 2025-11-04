@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import { BottomNavigation } from "@/components/BottomNavigation";
 import { AccountType, useAccounts } from "@/contexts/AccountContext";
-import {useTransactionCardsStagger} from "@/hooks/useTransactionCardsStagger";
+import { useTransactionCardsStagger } from "@/hooks/useTransactionCardsStagger";
 
 const Transactions: React.FC = () => {
 	const [selectedAccount, setSelectedAccount] =
@@ -17,8 +17,8 @@ const Transactions: React.FC = () => {
 	const { transactions } = useAccounts();
 	const navigate = useNavigate();
 
-  const containerRef = useRef<HTMLDivElement>(null);
-  useTransactionCardsStagger(containerRef);
+	const containerRef = useRef<HTMLDivElement>(null);
+	useTransactionCardsStagger(containerRef, selectedAccount);
 
 	const accountLabels: Record<AccountType, string> = {
 		currentAccount: "Current account",

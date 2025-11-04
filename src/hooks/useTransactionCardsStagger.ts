@@ -2,7 +2,10 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { RefObject } from "react";
 
-export const useTransactionCardsStagger = (containerRef: RefObject<HTMLElement>) => {
+export const useTransactionCardsStagger = (
+  containerRef: RefObject<HTMLElement>,
+  dependency?: any 
+) => {
   useGSAP(
     () => {
       const cards = containerRef.current?.querySelectorAll(".transaction-item");
@@ -22,6 +25,6 @@ export const useTransactionCardsStagger = (containerRef: RefObject<HTMLElement>)
         }
       );
     },
-    { scope: containerRef }
+    { scope: containerRef, dependencies: [dependency] }
   );
 };
