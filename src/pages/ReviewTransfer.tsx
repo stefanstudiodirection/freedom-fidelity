@@ -103,7 +103,7 @@ export const ReviewTransfer: React.FC = () => {
 						<div className="flex items-center justify-between">
 							<div className="flex items-center gap-3">
 								<div
-									className="w-10 h-10 flex items-center justify-center bg-[#211E1E] dark:bg-[#000] rounded-[4px]"
+									className="w-12 h-12 flex items-center justify-center bg-[#211E1E] dark:bg-[#000] rounded-[4px]"
 									style={{ color: source.color }}
 								>
 									<span className="text-2xl">{source.icon}</span>
@@ -133,7 +133,7 @@ export const ReviewTransfer: React.FC = () => {
 						<div className="flex items-center justify-between">
 							<div className="flex items-center gap-3">
 								<div
-									className="w-10 h-10 flex items-center justify-center bg-[#211E1E] dark:bg-[#000] rounded-[4px]"
+									className="w-12 h-12 flex items-center justify-center bg-[#211E1E] dark:bg-[#000] rounded-[4px]"
 									style={{ color: destination.color }}
 								>
 									<span className="text-2xl">{destination.icon}</span>
