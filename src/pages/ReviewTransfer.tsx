@@ -188,7 +188,7 @@ export const ReviewTransfer: React.FC = () => {
 									less at retirement due to lost growth
 								</p>
 								<a
-									href="#"
+									href="/learn/3"
 									className="inline-flex items-center gap-1 text-sm text-foreground underline hover:opacity-70 transition-opacity"
 								>
 									Learn more
