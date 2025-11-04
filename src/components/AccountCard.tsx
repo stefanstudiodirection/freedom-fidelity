@@ -102,7 +102,7 @@ export const AccountCard: React.FC<AccountCardProps> = ({
 			{/* Bottom section: Only for Current Account */}
 			{type === "current" && (
 				<div className="flex justify-between items-center mt-3 pt-3">
-					<span className="text-sm text-black">
+					<span className="text-base text-black">
 						Funds available to spend
 					</span>
 					<button

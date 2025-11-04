@@ -263,7 +263,7 @@ const AccountDetail: React.FC = () => {
 				</button>
 				<div>
 					{/* <div className="mb-2 text-sm opacity-50">{config.display}</div> */}
-					<div className="text-2xl mb-4 font-semibold">{config.display}</div>
+					<div className="text-2xl mb-4 font-normal">{config.display}</div>
 					<div className="rounded-lg bg-white dark:bg-[#211E1E] flex items-center justify-between pt-2 pb-2 pl-2 pr-5 mb-4">
 						<div className="flex items-center gap-2">
 							{/* TODO: Icon if needed */}
@@ -275,7 +275,7 @@ const AccountDetail: React.FC = () => {
 							</div>
 							<span className="font-medium text-foreground">Balance</span>
 						</div>
-						<div className="text-lg ml-2 font-semibold text-foreground">
+						<div className="text-lg ml-2 font-normal text-foreground">
 							{formatCurrency(account.balance)}
 						</div>
 					</div>
@@ -328,14 +328,14 @@ const AccountDetail: React.FC = () => {
 					{/* TRANSACTIONS */}
 					<div className="mt-6">
 						<div className="flex items-center justify-between mb-4">
-							<h2 className="text-lg font-semibold text-foreground">
+							<h2 className="text-lg font-normal text-foreground">
 								Transactions
 							</h2>
 							<button
 								className="self-stretch flex items-center gap-1 text-lg text-[#A488F5] font-medium my-auto hover:text-[#9575e8] transition-colors"
 								onClick={() => navigate("/budgeting")}
 							>
-								<span className="text-[#A488F5] self-stretch my-auto text-base font-semibold">
+								<span className="text-[#A488F5] self-stretch my-auto text-base font-normal">
 									View budget
 								</span>
 								<img
@@ -367,7 +367,7 @@ const AccountDetail: React.FC = () => {
 											</div>
 										</div>
 										<div
-											className={`text-right font-semibold ${
+											className={`text-right font-normal ${
 												tr.amount > 0 ? "text-[#34C759]" : "text-foreground"
 											}`}
 										>

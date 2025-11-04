@@ -420,7 +420,7 @@ const Budgeting: React.FC = () => {
 			<div className="px-4 py-6 flex flex-col flex-1">
 				{/* Header */}
 				<div className="flex items-center justify-between mb-4">
-					<h1 className="text-[28px] font-semibold text-foreground">
+					<h1 className="text-[28px] font-normal text-foreground">
 						Budgeting
 					</h1>
 					<button
@@ -530,7 +530,7 @@ const Budgeting: React.FC = () => {
 				{/* Categories Section */}
 				<div className="mb-3">
 					<div className="flex items-center justify-between mb-4">
-						<h2 className="text-lg font-semibold text-foreground">
+						<h2 className="text-lg font-normal text-foreground">
 							Categories
 						</h2>
 						<button className="text-sm text-[#A488F5] font-medium">Edit</button>
@@ -591,7 +591,7 @@ const Budgeting: React.FC = () => {
 
 				{/* Chart Section */}
 				<div className="bg-white dark:bg-[#211E1E] rounded-lg p-6 mb-6">
-					<h2 className="text-lg font-semibold text-foreground mb-4">
+					<h2 className="text-lg font-normal text-foreground mb-4">
 						Saving by category
 					</h2>
 					<ChartContainer
@@ -621,7 +621,7 @@ const Budgeting: React.FC = () => {
 													<tspan
 														x={viewBox.cx}
 														y={(viewBox.cy || 0) + 10}
-														className="fill-foreground text-lg font-semibold"
+														className="fill-foreground text-lg font-normal"
 													>
 														{formatCurrency(totalSpent)}
 													</tspan>
@@ -656,7 +656,7 @@ const Budgeting: React.FC = () => {
 				{/* Transactions Section */}
 				<div>
 					<div className="flex items-center justify-between mb-4">
-						<h2 className="text-lg font-semibold text-foreground">
+						<h2 className="text-lg font-normal text-foreground">
 							Recent transactions
 						</h2>
 						<button
@@ -693,7 +693,7 @@ const Budgeting: React.FC = () => {
 										</div>
 									</div>
 									<div
-										className={`text-lg font-semibold ${
+										className={`text-lg font-normal ${
 											transaction.amount >= 0
 												? "text-[#34C759]"
 												: "text-foreground"

@@ -400,7 +400,7 @@ const LearnArticle: React.FC = () => {
 					</div>
 
 					{/* Title */}
-					<h1 className="text-3xl font-bold text-foreground mb-6 leading-tight">
+					<h1 className="text-3xl font-normal text-foreground mb-6 leading-tight">
 						{article.title}
 					</h1>
 
@@ -412,7 +412,7 @@ const LearnArticle: React.FC = () => {
 									return (
 										<h2
 											key={index}
-											className="text-2xl font-bold text-foreground mt-8 mb-4"
+											className="text-2xl font-normal text-foreground mt-8 mb-4"
 										>
 											{block.content}
 										</h2>

@@ -73,7 +73,7 @@ export const BottomNavigation: React.FC = () => {
           <div className={isActive(item.path) ? "text-[#A488F5]" : "text-[#716860] dark:text-gray-400"}>
             {item.icon}
           </div>
-          <span className={`mt-1 text-xs ${isActive(item.path) ? "text-[#A488F5]" : "text-[#716860] dark:text-gray-400"}`}>
+          <span className={`mt-1 text-sm ${isActive(item.path) ? "text-[#A488F5]" : "text-[#716860] dark:text-gray-400"}`}>
             {item.label}
           </span>
         </button>

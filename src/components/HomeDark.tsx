@@ -138,7 +138,7 @@ export const HomeDark: React.FC = () => {
           <div className="flex w-full items-center gap-[40px_100px] leading-none justify-between">
             <h2 className="text-foreground text-[19px] font-normal self-stretch my-auto">Rewards</h2>
             <button
-              className="self-stretch flex items-center gap-1 text-lg text-[#A488F5] font-medium my-auto hover:text-[#9575e8] transition-colors"
+              className="self-stretch flex items-center gap-1 text-lg text-[#A488F5] font-normal my-auto hover:text-[#9575e8] transition-colors"
               onClick={handleSeeAllPromotions}
               aria-expanded={showAllPromotions}
             >
@@ -184,7 +184,7 @@ export const HomeDark: React.FC = () => {
             <h2 className="text-foreground text-[19px] font-normal">Content hub</h2>
             <button
               onClick={handleNavigateToLearn}
-              className="flex items-center gap-1 text-lg text-[#A488F5] font-medium hover:text-[#9575e8] transition-colors"
+              className="flex items-center gap-1 text-lg text-[#A488F5] font-normal hover:text-[#9575e8] transition-colors"
               aria-label="See all learning resources"
             >
               <span>See all</span>

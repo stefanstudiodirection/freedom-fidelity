@@ -72,7 +72,7 @@ const Transactions: React.FC = () => {
 			<div className="px-4 pt-6 pb-6">
 				{/* Header */}
 				<div className="flex justify-between items-center mb-8">
-					<h1 className="text-[28px] font-semibold">Transactions</h1>
+					<h1 className="text-[28px] font-normal">Transactions</h1>
 					<div className="flex gap-3">
 						<button className="w-12 h-12 rounded-full bg-white dark:bg-[#1C1C1E] flex items-center justify-center">
 							<Search className="w-5 h-5" />
@@ -122,7 +122,7 @@ const Transactions: React.FC = () => {
 								</div>
 							</div>
 							<div
-								className={`text-lg font-semibold ${
+								className={`text-lg font-normal ${
 									transaction.amount >= 0 ? "text-[#34C759]" : "text-foreground"
 								}`}
 							>

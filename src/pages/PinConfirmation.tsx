@@ -129,7 +129,7 @@ export const PinConfirmation: React.FC = () => {
 
         {/* Main Content */}
         <div className="flex-1 flex flex-col items-center justify-start pt-12">
-          <h2 className="text-2xl font-bold text-foreground mb-3">Enter your PIN</h2>
+          <h2 className="text-2xl font-normal text-foreground mb-3">Enter your PIN</h2>
           <p className="text-muted-foreground text-sm mb-8">Please enter your PIN to confirm this transfer</p>
 
           {/* PIN Input Fields */}
