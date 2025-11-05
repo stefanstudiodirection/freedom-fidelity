@@ -7,7 +7,8 @@ export const useAccountCardsStagger = (
 ) => {
 	useGSAP(
 		() => {
-			const cards = containerRef.current?.querySelectorAll(".account-card");
+			// const cards = containerRef.current?.querySelectorAll(".account-card");
+      const cards = containerRef.current?.querySelectorAll(".account-card:not(:first-child)");
 
 			if (!cards || cards.length === 0) return;
 
