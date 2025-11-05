@@ -48,22 +48,22 @@ export const HomeDark: React.FC = () => {
 
 	useAccountCardsStagger(accountsSectionRef);
 
-	useGSAP(() => {
-		if (!headerRef.current) return;
+	// useGSAP(() => {
+	// 	if (!headerRef.current) return;
 
-		gsap.fromTo(
-			headerRef.current,
-			{
-				y: "-100%",
-			},
-			{
-				y: "0%",
-				duration: 1,
-				ease: "power2.out",
-        delay: 0.3, // Počinje nakon main animacije
-			}
-		);
-	}, []);
+	// 	gsap.fromTo(
+	// 		headerRef.current,
+	// 		{
+	// 			y: "-100%",
+	// 		},
+	// 		{
+	// 			y: "0%",
+	// 			duration: 1,
+	// 			ease: "power2.out",
+  //       delay: 0.3, // Počinje nakon main animacije
+	// 		}
+	// 	);
+	// }, []);
 
   useGSAP(() => {
 		if (!mainRef.current) return;
@@ -76,7 +76,7 @@ export const HomeDark: React.FC = () => {
 			},
 			{
 				y: 0,
-				opacity: 1,
+				opacity: 1.50,
 				duration: 0.6,
 				ease: "power2.out",
 			}
