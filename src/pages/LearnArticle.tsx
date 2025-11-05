@@ -76,9 +76,9 @@ const articles = {
 	},
 	"2": {
 		id: "2",
-		title: "5 Questions to Ask Before Accessing Your Pension Early",
+		title: "Questions to ask about dawing down",
 		heroImage:
-			"https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600",
+			"/content-hub/woman-with-smile.webp",
 		date: "28 Oct 2025",
 		readTime: "4 minute read",
 		content: [
@@ -158,7 +158,7 @@ const articles = {
 		id: "3",
 		title: "The Secret to Growing Your Retirement Fund",
 		heroImage:
-			"https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=600",
+			"/content-hub/happy-couple.webp",
 		date: "25 Oct 2025",
 		readTime: "6 minute read",
 		content: [
@@ -239,9 +239,9 @@ const articles = {
 	},
 	"4": {
 		id: "4",
-		title: "Should I Use My Pension for the Down Payment?",
+		title: "Should I Really Touch My Pension? A Guide for the Under-55s",
 		heroImage:
-			"https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600",
+			"/content-h/man-smiling.webp",
 		date: "22 Oct 2025",
 		readTime: "5 minute read",
 		content: [
